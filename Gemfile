@@ -39,6 +39,8 @@ gem 'slim-rails'
 gem 'skim'
 gem 'jquery-rails'
 gem 'pry', '~> 0.12.2'
+gem 'rest-client'
+gem 'responders', '~> 2.0'
 
 group :production, :test do
   gem 'pg'
