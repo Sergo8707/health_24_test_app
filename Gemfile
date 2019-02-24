@@ -41,7 +41,8 @@ gem 'jquery-rails'
 gem 'pry', '~> 0.12.2'
 gem 'rest-client'
 gem 'responders', '~> 2.0'
-
+gem 'kaminari'
+gem 'bootstrap-kaminari-views'
 group :production, :test do
   gem 'pg'
 end
