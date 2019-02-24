@@ -38,6 +38,7 @@ gem 'twitter-bootstrap-rails'
 gem 'slim-rails'
 gem 'skim'
 gem 'jquery-rails'
+gem 'pry', '~> 0.12.2'
 
 group :production, :test do
   gem 'pg'
