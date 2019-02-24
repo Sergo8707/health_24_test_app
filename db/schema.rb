@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_02_24_123048) do
+ActiveRecord::Schema.define(version: 2019_02_24_164940) do
 
   create_table "commits", force: :cascade do |t|
     t.datetime "date"
@@ -27,6 +27,7 @@ ActiveRecord::Schema.define(version: 2019_02_24_123048) do
     t.string "email"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.index ["email"], name: "index_users_on_email", unique: true
   end
 
 end
