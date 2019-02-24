@@ -1,0 +1,6 @@
+= form_tag commits_path, method: :get
+  .row
+    .col-lg-8.col-md-8.col-sm-8.col-xs-8
+      = email_field_tag :email, '', class: 'form-control', required: "required", placeholder: 'Search...'
+    .col-lg-1.col-md-1.col-sm-1.col-xs-1
+      = submit_tag 'Search', class: 'btn btn-info'

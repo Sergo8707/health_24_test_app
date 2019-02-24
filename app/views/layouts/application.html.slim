@@ -19,6 +19,10 @@ html lang="en"
         .row
           .col-lg-3.col-md-3.col-sm-3.col-xs-3
             = link_to Health24TestApp, root_path, class: 'navbar-brand'
+          - if controller_name == 'commits'
+            .col-lg-4.col-md-4.col-sm-4.col-xs-4
+              .row.search_container
+                == render 'commits/search'
 
     .container
       .row
