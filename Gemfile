@@ -38,11 +38,19 @@ gem 'twitter-bootstrap-rails'
 gem 'slim-rails'
 gem 'skim'
 gem 'jquery-rails'
-gem 'pry', '~> 0.12.2'
 gem 'rest-client'
 gem 'responders', '~> 2.0'
 gem 'kaminari'
 gem 'bootstrap-kaminari-views'
+
+
+gem 'sdoc', '~> 0.4.0', group: :doc
+gem 'mime-types', '~> 3.0'
+gem 'http-cookie', '~> 1.0', '>= 1.0.2'
+gem 'netrc', '~> 0.11.0'
+gem 'rails_12factor'
+gem 'rails-controller-testing'
+
 group :production, :test do
   gem 'pg'
 end
@@ -50,6 +58,9 @@ end
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
+  gem 'rspec-rails', "~> 3.5"
+  gem 'factory_girl_rails'
+  gem 'pry', '~> 0.12.2'
 end
 
 group :development do
@@ -69,6 +80,8 @@ group :test do
   gem 'selenium-webdriver'
   # Easy installation and use of chromedriver to run system tests with Chrome
   gem 'chromedriver-helper'
+  gem 'shoulda-matchers'
+  gem 'database_cleaner'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
