@@ -15,7 +15,7 @@ class ImportCommit
         when 404
           raise 'Wrong Name or Repository'
         when 403
-          raise 'limit is Exceeded'
+          raise 'limit is Exceeded (60 requests per hour)'
       end
     end
     create_data(data)
